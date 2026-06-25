@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Projects
+{% endblock %}
+
+{% block content %}
+
+<section class="container py-5 mt-5">
+
+    <div class="text-center mb-5">
+
+        <h1 class="fw-bold">
+            Our Projects
+        </h1>
+
+        <p class="text-muted">
+            Successfully completed lift installations.
+        </p>
+
+    </div>
+
+    <!-- Search Form -->
+
+    <form method="GET" class="mb-5">
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-6">
+
+                <div class="input-group">
+
+                    <input type="text"
+                           name="q"
+                           class="form-control"
+                           placeholder="Search projects..."
+                           value="{{ request.GET.q }}">
+
+                    <button class="btn btn-primary">
+                        Search
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </form>
+
+    <div class="row g-4">
+
+        {% for project in projects %}
+
+        <div class="col-lg-4">
+
+            <div class="card shadow h-100">
+
+                <img src="{{ project.image.url }}"
+                     class="card-img-top"
+                     style="height:300px; object-fit:cover;">
+
+                <div class="card-body">
+
+                    <h4>{{ project.title }}</h4>
+
+                    <p>
+                        {{ project.location }}
+                    </p>
+
+                    <p>
+                        {{ project.description|truncatewords:15 }}
+                    </p>
+
+                    <a href="{% url 'project_detail' project.pk %}"
+                       class="btn btn-primary">
+
+                        View Project
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        {% empty %}
+
+        <div class="col-12">
+
+            <h3 class="text-center">
+                No Projects Added Yet
+            </h3>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+    <!-- Pagination -->
+
+    <div class="d-flex justify-content-center mt-5">
+
+        <nav>
+
+            <ul class="pagination">
+
+                {% if projects.has_previous %}
+
+                <li class="page-item">
+
+                    <a class="page-link"
+                       href="?page={{ projects.previous_page_number }}">
+                        Previous
+                    </a>
+
+                </li>
+
+                {% endif %}
+
+                {% for num in projects.paginator.page_range %}
+
+                <li class="page-item {% if projects.number == num %}active{% endif %}">
+
+                    <a class="page-link"
+                       href="?page={{ num }}">
+
+                        {{ num }}
+
+                    </a>
+
+                </li>
+
+                {% endfor %}
+
+                {% if projects.has_next %}
+
+                <li class="page-item">
+
+                    <a class="page-link"
+                       href="?page={{ projects.next_page_number }}">
+                        Next
+                    </a>
+
+                </li>
+
+                {% endif %}
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</section>
+
+{% endblock %}

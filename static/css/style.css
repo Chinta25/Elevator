@@ -1,0 +1,40 @@
+:root{
+    --primary:#0B1F33;
+    --secondary:#66717E;
+    --accent:#1E88E5;
+    --gold:#C9A227;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+.custom-navbar{
+    background: rgba(11,31,51,0.95);
+}
+
+.nav-link{
+    color:white !important;
+    margin-right:15px;
+}
+
+.nav-link:hover{
+    color:var(--gold) !important;
+}
+
+footer{
+    background: var(--primary);
+}
+
+.card{
+    transition: all .4s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.15) !important;
+}
+
+.card img{
+    object-fit: cover;
+}

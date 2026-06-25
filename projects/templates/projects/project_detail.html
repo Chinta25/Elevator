@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ project.title }}
+{% endblock %}
+
+{% block content %}
+
+<section class="container py-5 mt-5">
+
+    <div class="row g-5">
+
+        <div class="col-lg-6">
+
+            <img src="{{ project.image.url }}"
+                 class="img-fluid rounded shadow">
+
+        </div>
+
+        <div class="col-lg-6">
+
+            <h1>{{ project.title }}</h1>
+
+            <h5>Client: {{ project.client }}</h5>
+
+            <h5>Location: {{ project.location }}</h5>
+
+            <h5>Completed: {{ project.completion_date }}</h5>
+
+            <hr>
+
+            <p>{{ project.description }}</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

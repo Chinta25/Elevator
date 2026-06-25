@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{{ product.title }}
+{% endblock %}
+
+{% block content %}
+
+<section class="py-5 mt-5">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+            <!-- Product Image -->
+
+            <div class="col-lg-6">
+
+                <img src="{{ product.image.url }}"
+                     class="img-fluid rounded shadow w-100"
+                     alt="{{ product.title }}">
+
+            </div>
+
+            <!-- Product Details -->
+
+            <div class="col-lg-6">
+
+                <span class="badge bg-primary mb-3">
+                    {{ product.category }}
+                </span>
+
+                <h1 class="fw-bold mb-4">
+                    {{ product.title }}
+                </h1>
+
+                <h5 class="text-muted mb-4">
+                    Capacity: {{ product.capacity }}
+                </h5>
+
+                <p class="lead">
+                    {{ product.short_description }}
+                </p>
+
+                <hr>
+
+                <h4 class="mb-3">
+                    Features
+                </h4>
+
+                <ul class="list-group list-group-flush mb-4">
+
+                    {% for feature in product.features.split %}
+                    
+                    <li class="list-group-item">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        {{ feature }}
+                    </li>
+
+                    {% endfor %}
+
+                </ul>
+
+                <div class="mt-4">
+
+                    <a href="#"
+                       class="btn btn-primary btn-lg me-2">
+                        Get Free Quote
+                    </a>
+
+                    <a href="tel:+919999999999"
+                       class="btn btn-outline-dark btn-lg">
+                        Call Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

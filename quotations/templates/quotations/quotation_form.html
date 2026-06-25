@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}
+Get Quote
+{% endblock %}
+
+{% block content %}
+
+<section class="py-5 mt-5">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="card shadow border-0">
+
+                    <div class="card-body p-5">
+
+                        <h2 class="text-center mb-4">
+                            Request a Free Quote
+                        </h2>
+
+                        <form method="POST">
+
+                            {% csrf_token %}
+
+                            {{ form|crispy }}
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary w-100">
+
+                                Submit Enquiry
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
