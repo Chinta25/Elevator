@@ -1,11 +1,11 @@
-from django.shortcuts import render, redirect
-from core.forms import ContactForm
+from django.conf import settings
 from django.contrib import messages
+from django.core.mail import send_mail
+from django.shortcuts import redirect, render
+
+from core.forms import ContactForm
 from products.models import Product
 from testimonials.models import Testimonial
-
-from django.core.mail import send_mail
-from django.conf import settings
 
 
 def home(request):

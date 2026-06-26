@@ -1,7 +1,8 @@
-from django.shortcuts import render, get_object_or_404
-from .models import Product
-from django.db.models import Q
 from django.core.paginator import Paginator
+from django.db.models import Q
+from django.shortcuts import get_object_or_404, render
+
+from .models import Product
 
 
 def product_list(request):

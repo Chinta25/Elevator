@@ -1,7 +1,8 @@
-from django.shortcuts import render, get_object_or_404
-from .models import Project
-from django.db.models import Q
 from django.core.paginator import Paginator
+from django.db.models import Q
+from django.shortcuts import get_object_or_404, render
+
+from .models import Project
 
 
 def project_list(request):

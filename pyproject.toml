@@ -10,7 +10,7 @@ select = [
     "I",  # isort (import sorting)
 ]
 
-ignore = []
+ignore = ["E501"]
 
 [tool.ruff.format]
 quote-style = "single"
