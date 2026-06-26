@@ -32,6 +32,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+
+    'jazzmin',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -52,6 +55,14 @@ INSTALLED_APPS = [
     'accounts',
     'testimonials',
 ]
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Elevate Lifts Admin",
+    "site_header": "Elevate Lifts",
+    "site_brand": "Elevate Lifts",
+    "welcome_sign": "Welcome to Elevate Lifts Admin Panel",
+    "copyright": "Elevate Trade Lifts",
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

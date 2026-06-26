@@ -1,18 +1,183 @@
 {% extends 'base.html' %}
 
-{% block title %}About Us{% endblock %}
+{% block title %}
+About Us
+{% endblock %}
 
 {% block content %}
 
-<section class="container py-5 mt-5">
+<!-- Hero Section -->
+<section class="bg-dark text-white py-5 mt-5">
+    <div class="container text-center">
 
-    <h1 class="text-center mb-4">About Elevate Lifts</h1>
+        <h1 class="display-4 fw-bold">
+            About Elevate Lifts
+        </h1>
 
-    <p class="lead text-center">
-        Elevate Lifts is a leading elevator company providing
-        installation, modernization, and maintenance services
-        for residential and commercial buildings.
-    </p>
+        <p class="lead">
+            Delivering safe, innovative, and reliable elevator solutions
+            for homes, hospitals, and commercial buildings.
+        </p>
+
+    </div>
+</section>
+
+<!-- Company Introduction -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <h2 class="fw-bold mb-4">
+                    Who We Are
+                </h2>
+
+                <p class="lead">
+                    Elevate Lifts is a trusted elevator company specializing in
+                    installation, modernization, repair, and maintenance services.
+                </p>
+
+                <p>
+                    With years of industry experience, we provide customized
+                    elevator solutions for residential apartments, villas,
+                    hospitals, shopping malls, and commercial complexes.
+                </p>
+
+                <p>
+                    Our mission is to deliver safe, energy-efficient, and
+                    technologically advanced elevator systems that exceed
+                    customer expectations.
+                </p>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1000"
+                     class="img-fluid rounded shadow">
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Why Choose Elevate Lifts?
+            </h2>
+
+        </div>
+
+        <div class="row text-center g-4">
+
+            <div class="col-md-3">
+
+                <i class="fas fa-award fa-3x text-primary mb-3"></i>
+
+                <h5>ISO Certified</h5>
+
+                <p>High quality standards and certified safety systems.</p>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+
+                <h5>Expert Engineers</h5>
+
+                <p>Experienced professionals for installation and support.</p>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+
+                <h5>24/7 Support</h5>
+
+                <p>Fast response maintenance and emergency assistance.</p>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+
+                <h5>Safety First</h5>
+
+                <p>International safety standards in every installation.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Statistics -->
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="row text-center">
+
+            <div class="col-md-3">
+                <h1 class="display-4 fw-bold text-primary">500+</h1>
+                <h5>Installations</h5>
+            </div>
+
+            <div class="col-md-3">
+                <h1 class="display-4 fw-bold text-primary">250+</h1>
+                <h5>Happy Clients</h5>
+            </div>
+
+            <div class="col-md-3">
+                <h1 class="display-4 fw-bold text-primary">10+</h1>
+                <h5>Years Experience</h5>
+            </div>
+
+            <div class="col-md-3">
+                <h1 class="display-4 fw-bold text-primary">24/7</h1>
+                <h5>Support</h5>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Call To Action -->
+<section class="bg-primary text-white py-5">
+
+    <div class="container text-center">
+
+        <h2 class="fw-bold">
+            Looking for a Reliable Elevator Partner?
+        </h2>
+
+        <p class="lead">
+            Contact us today for installation, modernization, or maintenance services.
+        </p>
+
+        <a href="{% url 'contact' %}"
+           class="btn btn-warning btn-lg">
+            Contact Us
+        </a>
+
+    </div>
 
 </section>
 

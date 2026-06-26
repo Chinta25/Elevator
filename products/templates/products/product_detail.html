@@ -49,18 +49,11 @@
                     Features
                 </h4>
 
-                <ul class="list-group list-group-flush mb-4">
+                <div class="card bg-light border-0 p-3 mb-4">
 
-                    {% for feature in product.features.split %}
-                    
-                    <li class="list-group-item">
-                        <i class="fas fa-check-circle text-success me-2"></i>
-                        {{ feature }}
-                    </li>
+                    {{ product.features|linebreaks }}
 
-                    {% endfor %}
-
-                </ul>
+                </div>
 
                 <div class="mt-4">
 

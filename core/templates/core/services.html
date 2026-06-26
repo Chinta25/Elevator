@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Our Services
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="bg-dark text-white py-5 mt-5">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">Our Services</h1>
+        <p class="lead">
+            Complete Elevator Solutions for Residential, Commercial and Industrial Buildings.
+        </p>
+    </div>
+</section>
+
+<!-- Services -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+                <div class="card shadow h-100 border-0">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-building fa-3x text-primary mb-3"></i>
+                        <h4>Lift Installation</h4>
+                        <p>
+                            Professional installation of passenger, home, hospital and commercial lifts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card shadow h-100 border-0">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+                        <h4>AMC Maintenance</h4>
+                        <p>
+                            Preventive maintenance and annual maintenance contracts with 24/7 support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card shadow h-100 border-0">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-sync-alt fa-3x text-primary mb-3"></i>
+                        <h4>Modernization</h4>
+                        <p>
+                            Upgrade old elevators with advanced safety systems and modern interiors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-5 bg-light">
+    <div class="container text-center">
+
+        <h2 class="fw-bold mb-5">Why Choose Us?</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <h1 class="text-primary">500+</h1>
+                <h5>Installations</h5>
+            </div>
+
+            <div class="col-md-3">
+                <h1 class="text-primary">10+</h1>
+                <h5>Years Experience</h5>
+            </div>
+
+            <div class="col-md-3">
+                <h1 class="text-primary">24/7</h1>
+                <h5>Support</h5>
+            </div>
+
+            <div class="col-md-3">
+                <h1 class="text-primary">100%</h1>
+                <h5>Customer Satisfaction</h5>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-primary text-white py-5">
+    <div class="container text-center">
+        <h2>Need an Elevator Solution?</h2>
+        <p>Contact our experts today for a free consultation.</p>
+
+        <a href="{% url 'contact' %}"
+           class="btn btn-warning btn-lg">
+            Contact Us
+        </a>
+    </div>
+</section>
+
+{% endblock %}

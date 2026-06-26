@@ -1,0 +1,17 @@
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "F",  # pyflakes
+    "W",  # pycodestyle warnings
+    "I",  # isort (import sorting)
+]
+
+ignore = []
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
