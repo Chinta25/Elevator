@@ -7,52 +7,170 @@ Our Services
 {% block content %}
 
 <!-- Hero Section -->
-<section class="bg-dark text-white py-5 mt-5">
+<section class="text-white py-5 mt-5"
+         style="
+         background:
+         linear-gradient(rgba(11,31,51,.80),
+         rgba(11,31,51,.80)),
+         url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600');
+         background-size: cover;
+         background-position: center;
+         min-height: 70vh;
+         display: flex;
+         align-items: center;">
+
     <div class="container text-center">
-        <h1 class="display-4 fw-bold">Our Services</h1>
-        <p class="lead">
-            Complete Elevator Solutions for Residential, Commercial and Industrial Buildings.
+
+        <span class="badge bg-warning text-dark px-3 py-2 mb-3">
+            Premium Elevator Services
+        </span>
+
+        <h1 class="display-3 fw-bold mb-4">
+            Comprehensive Elevator Solutions
+        </h1>
+
+        <p class="lead col-lg-8 mx-auto mb-4">
+            Delivering world-class elevator installation, modernization,
+            maintenance, and support services for residential, commercial,
+            and industrial projects.
         </p>
+
+        <a href="{% url 'contact' %}"
+           class="btn btn-warning btn-lg px-5 me-3">
+            Get Free Consultation
+        </a>
+
+        <a href="tel:+919999999999"
+           class="btn btn-outline-light btn-lg px-5">
+            Call Now
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- Statistics -->
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <div class="row text-center">
+
+            <div class="col-md-3">
+                <h1 class="fw-bold text-primary">500+</h1>
+                <p class="text-muted">Successful Installations</p>
+            </div>
+
+            <div class="col-md-3">
+                <h1 class="fw-bold text-primary">10+</h1>
+                <p class="text-muted">Years of Experience</p>
+            </div>
+
+            <div class="col-md-3">
+                <h1 class="fw-bold text-primary">24/7</h1>
+                <p class="text-muted">Emergency Support</p>
+            </div>
+
+            <div class="col-md-3">
+                <h1 class="fw-bold text-primary">100%</h1>
+                <p class="text-muted">Customer Satisfaction</p>
+            </div>
+
+        </div>
+
     </div>
 </section>
+
 
 <!-- Services -->
 <section class="py-5">
     <div class="container">
 
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">
+                Our Core Services
+            </h2>
+
+            <p class="text-muted">
+                Reliable elevator solutions tailored to your requirements.
+            </p>
+        </div>
+
         <div class="row g-4">
 
             <div class="col-lg-4">
-                <div class="card shadow h-100 border-0">
-                    <div class="card-body text-center p-4">
-                        <i class="fas fa-building fa-3x text-primary mb-3"></i>
+                <div class="card border-0 shadow h-100">
+                    <div class="card-body text-center p-5">
+                        <i class="fas fa-building fa-3x text-primary mb-4"></i>
                         <h4>Lift Installation</h4>
                         <p>
-                            Professional installation of passenger, home, hospital and commercial lifts.
+                            Expert installation of residential, commercial,
+                            hospital and industrial elevators.
                         </p>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
-                <div class="card shadow h-100 border-0">
-                    <div class="card-body text-center p-4">
-                        <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+                <div class="card border-0 shadow h-100">
+                    <div class="card-body text-center p-5">
+                        <i class="fas fa-tools fa-3x text-primary mb-4"></i>
                         <h4>AMC Maintenance</h4>
                         <p>
-                            Preventive maintenance and annual maintenance contracts with 24/7 support.
+                            Preventive maintenance contracts ensuring smooth
+                            and safe elevator operations.
                         </p>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
-                <div class="card shadow h-100 border-0">
-                    <div class="card-body text-center p-4">
-                        <i class="fas fa-sync-alt fa-3x text-primary mb-3"></i>
+                <div class="card border-0 shadow h-100">
+                    <div class="card-body text-center p-5">
+                        <i class="fas fa-sync-alt fa-3x text-primary mb-4"></i>
                         <h4>Modernization</h4>
                         <p>
-                            Upgrade old elevators with advanced safety systems and modern interiors.
+                            Upgrade outdated elevators with modern technology
+                            and enhanced safety features.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card border-0 shadow h-100">
+                    <div class="card-body text-center p-5">
+                        <i class="fas fa-shield-alt fa-3x text-primary mb-4"></i>
+                        <h4>Safety Inspection</h4>
+                        <p>
+                            Comprehensive inspections to ensure compliance
+                            with safety standards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card border-0 shadow h-100">
+                    <div class="card-body text-center p-5">
+                        <i class="fas fa-phone-volume fa-3x text-primary mb-4"></i>
+                        <h4>24/7 Emergency Support</h4>
+                        <p>
+                            Dedicated emergency assistance to minimize downtime
+                            and maximize safety.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card border-0 shadow h-100">
+                    <div class="card-body text-center p-5">
+                        <i class="fas fa-drafting-compass fa-3x text-primary mb-4"></i>
+                        <h4>Custom Lift Solutions</h4>
+                        <p>
+                            Tailor-made elevator systems designed according
+                            to your building needs.
                         </p>
                     </div>
                 </div>
@@ -63,32 +181,158 @@ Our Services
     </div>
 </section>
 
-<!-- Why Choose Us -->
-<section class="py-5 bg-light">
-    <div class="container text-center">
 
-        <h2 class="fw-bold mb-5">Why Choose Us?</h2>
+<<!-- Our Process -->
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="text-primary fw-bold">
+                HOW WE WORK
+            </span>
+
+            <h2 class="fw-bold mt-2">
+                Our Proven Delivery Process
+            </h2>
+
+            <p class="text-muted">
+                From initial consultation to long-term support, we ensure
+                seamless execution at every stage.
+            </p>
+        </div>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card border-0 shadow-sm h-100 p-4">
+
+                    <div class="mb-4">
+                        <span class="badge bg-primary rounded-circle p-3 fs-5">
+                            01
+                        </span>
+                    </div>
+
+                    <i class="fas fa-comments fa-3x text-primary mb-3"></i>
+
+                    <h5 class="fw-bold">
+                        Consultation
+                    </h5>
+
+                    <p class="text-muted">
+                        Our specialists understand your building requirements
+                        and recommend the ideal lift solution.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card border-0 shadow-sm h-100 p-4">
+
+                    <div class="mb-4">
+                        <span class="badge bg-primary rounded-circle p-3 fs-5">
+                            02
+                        </span>
+                    </div>
+
+                    <i class="fas fa-clipboard-check fa-3x text-primary mb-3"></i>
+
+                    <h5 class="fw-bold">
+                        Site Assessment
+                    </h5>
+
+                    <p class="text-muted">
+                        Detailed site inspection and engineering analysis
+                        ensure accurate planning and execution.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card border-0 shadow-sm h-100 p-4">
+
+                    <div class="mb-4">
+                        <span class="badge bg-primary rounded-circle p-3 fs-5">
+                            03
+                        </span>
+                    </div>
+
+                    <i class="fas fa-screwdriver-wrench fa-3x text-primary mb-3"></i>
+
+                    <h5 class="fw-bold">
+                        Installation
+                    </h5>
+
+                    <p class="text-muted">
+                        Certified engineers perform installation with strict
+                        adherence to safety and quality standards.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card border-0 shadow-sm h-100 p-4">
+
+                    <div class="mb-4">
+                        <span class="badge bg-primary rounded-circle p-3 fs-5">
+                            04
+                        </span>
+                    </div>
+
+                    <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+
+                    <h5 class="fw-bold">
+                        After-Sales Support
+                    </h5>
+
+                    <p class="text-muted">
+                        We provide preventive maintenance, emergency service,
+                        and continuous technical support.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Why Choose Us -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">
+                Why Choose Elevate Lifts?
+            </h2>
+        </div>
 
         <div class="row g-4">
 
-            <div class="col-md-3">
-                <h1 class="text-primary">500+</h1>
-                <h5>Installations</h5>
+            <div class="col-md-6">
+                <p><i class="fas fa-check-circle text-success me-2"></i> Certified Engineers</p>
+                <p><i class="fas fa-check-circle text-success me-2"></i> Premium Quality Components</p>
+                <p><i class="fas fa-check-circle text-success me-2"></i> Competitive Pricing</p>
             </div>
 
-            <div class="col-md-3">
-                <h1 class="text-primary">10+</h1>
-                <h5>Years Experience</h5>
-            </div>
-
-            <div class="col-md-3">
-                <h1 class="text-primary">24/7</h1>
-                <h5>Support</h5>
-            </div>
-
-            <div class="col-md-3">
-                <h1 class="text-primary">100%</h1>
-                <h5>Customer Satisfaction</h5>
+            <div class="col-md-6">
+                <p><i class="fas fa-check-circle text-success me-2"></i> Fast Installation</p>
+                <p><i class="fas fa-check-circle text-success me-2"></i> 24/7 Technical Support</p>
+                <p><i class="fas fa-check-circle text-success me-2"></i> Proven Industry Experience</p>
             </div>
 
         </div>
@@ -96,16 +340,47 @@ Our Services
     </div>
 </section>
 
-<!-- CTA -->
+
+<!-- Emergency Support -->
+<section class="py-5 bg-dark text-white">
+    <div class="container text-center">
+
+        <i class="fas fa-headset fa-4x text-warning mb-4"></i>
+
+        <h2 class="fw-bold">
+            24/7 Emergency Elevator Support
+        </h2>
+
+        <p class="lead">
+            Our expert technicians are available around the clock.
+        </p>
+
+        <a href="tel:+919999999999"
+           class="btn btn-warning btn-lg">
+            Call Emergency Support
+        </a>
+
+    </div>
+</section>
+
+
+<!-- Final CTA -->
 <section class="bg-primary text-white py-5">
     <div class="container text-center">
-        <h2>Need an Elevator Solution?</h2>
-        <p>Contact our experts today for a free consultation.</p>
+
+        <h2 class="fw-bold">
+            Ready to Elevate Your Building?
+        </h2>
+
+        <p class="lead">
+            Request a free consultation and site visit today.
+        </p>
 
         <a href="{% url 'contact' %}"
-           class="btn btn-warning btn-lg">
-            Contact Us
+           class="btn btn-warning btn-lg px-5">
+            Request Free Site Visit
         </a>
+
     </div>
 </section>
 
